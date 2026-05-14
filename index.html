@@ -666,7 +666,7 @@
   min-width:0!important;
   width:auto!important;
   font-weight:900!important;
-  box-shadow:0 16px 34px rgba(37,211,102,.24)!important;
+  box-shadow:none!important;
 }
 .elementor-10 .elementor-element.elementor-element-12ecc9da .elementor-button-text:after{
   content:"  →";
@@ -1904,7 +1904,7 @@
   min-width:0!important;
   width:auto!important;
   font-weight:900!important;
-  box-shadow:0 16px 34px rgba(37,211,102,.24)!important;
+  box-shadow:none!important;
 }
 .elementor-10 .elementor-element.elementor-element-12ecc9da .elementor-button-text:after{
   content:"  →";
@@ -3142,7 +3142,7 @@
   min-width:0!important;
   width:auto!important;
   font-weight:900!important;
-  box-shadow:0 16px 34px rgba(37,211,102,.24)!important;
+  box-shadow:none!important;
 }
 .elementor-10 .elementor-element.elementor-element-12ecc9da .elementor-button-text:after{
   content:"  →";
@@ -3924,7 +3924,7 @@ html,body,.elementor-10{max-width:100%!important;overflow-x:hidden!important;}
 @media(max-width:420px){.sm-top-nav{width:calc(100% - 28px)}.sm-top-logo{min-width:112px}.sm-top-logo img{width:112px}.sm-top-cta{font-size:11px;padding:0 12px}.elementor-10 .elementor-element.elementor-element-6c650110 .elementor-heading-title{font-size:29px!important;}}
 /* Ajustes mobile da hero e navbar retratil */
 .sm-top-nav{transition:transform .28s ease, opacity .28s ease, background-color .28s ease, box-shadow .28s ease;}
-.sm-top-nav.is-fixed{position:fixed!important;top:0!important;background:rgba(18,48,74,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);box-shadow:0 14px 34px rgba(0,0,0,.18);padding:0 18px;border-radius:0 0 14px 14px;}
+.sm-top-nav.is-fixed{position:fixed!important;top:0!important;background:rgba(18,48,74,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);padding:0 18px;border-radius:0!important;box-shadow:none!important;}
 .sm-top-nav.nav-hidden{transform:translate(-50%,-110%)!important;opacity:0;pointer-events:none;}
 @media(max-width:767px){
   .elementor-10 .elementor-element.elementor-element-6c4f9997{--padding-bottom:0!important;}
@@ -4708,7 +4708,7 @@ html,body,.elementor-10{max-width:100%!important;overflow-x:hidden!important;}
   min-width:0!important;
   width:auto!important;
   font-weight:900!important;
-  box-shadow:0 16px 34px rgba(37,211,102,.24)!important;
+  box-shadow:none!important;
 }
 .elementor-10 .elementor-element.elementor-element-12ecc9da .elementor-button-text:after{
   content:"  →";
@@ -5388,6 +5388,42 @@ html,body,.elementor-10{max-width:100%!important;overflow-x:hidden!important;}
     font-size: 32px !important;
   }
 }
+
+/* ─── CARDS: visual mais sólido, sem aparência embaçada ─── */
+.sm-service-card{
+  border:1px solid rgba(20,30,40,.10)!important;
+  box-shadow:0 4px 14px rgba(15,39,63,.06)!important;
+  border-radius:12px!important;
+  padding:32px 24px!important;
+  align-items:flex-start!important;
+  text-align:left!important;
+}
+.sm-service-icon{
+  margin:0 0 18px!important;
+}
+.sm-service-card h3{
+  font-size:18px!important;
+  margin-bottom:10px!important;
+}
+.sm-service-card p{
+  font-size:14.5px!important;
+  line-height:1.55!important;
+  color:#555!important;
+}
+@media(max-width:767px){
+  .sm-services-section h2{font-size:28px!important;}
+  .sm-service-card{padding:26px 22px!important;}
+}
+
+/* ─── CTA button: remove halo verde feio ─── */
+.elementor-10 .elementor-element.elementor-element-23ea1558 .elementor-button{
+  box-shadow:none!important;
+  background:#25d366!important;
+}
+.elementor-10 .elementor-element.elementor-element-23ea1558 .elementor-button:hover{
+  background:#1db954!important;
+  box-shadow:none!important;
+}
 </style></head><body data-rsssl="1" class="home wp-singular page-template page-template-elementor_canvas page page-id-10 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-canvas elementor-kit-7 elementor-page elementor-page-10 e--ua-blink e--ua-chrome e--ua-webkit litespeed_lazyloaded" data-elementor-device-mode="desktop"><div data-elementor-type="wp-page" data-elementor-id="10" class="elementor elementor-10" data-elementor-post-type="page"><div class="elementor-element elementor-element-6c4f9997 e-flex e-con-boxed e-con e-parent e-lazyloaded" id="topo" data-id="6c4f9997" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;waves&quot;,&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;}"><nav class="sm-top-nav" aria-label="Navegacao principal">
   <a class="sm-top-logo" href="#topo" aria-label="SM Advogados">
     <img src="./Spiller &amp; Machado – Advogados_files/sm-logo-white.webp" alt="SM Advogados">
@@ -5536,22 +5572,22 @@ Vender, financiar ou transferir um imóvel da COHAB exige documentação em orde
       <article class="sm-service-card">
         <div class="sm-service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10.5 12 4l8 6.5v8.5a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1z"/></svg></div>
         <h3>Análise documental</h3>
-        <p>Verificação do contrato, histórico de pagamentos e situação junto à COHAB para entender o ponto real da regularização.</p>
+        <p>Contrato, pagamentos e situação atual do imóvel junto à COHAB.</p>
       </article>
       <article class="sm-service-card">
         <div class="sm-service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a4 4 0 0 1 4 4c0 3-4 7-4 7S8 10 8 7a4 4 0 0 1 4-4Zm0 5.3A1.3 1.3 0 1 0 12 5.7a1.3 1.3 0 0 0 0 2.6ZM5 20c.7-3.2 3.5-5 7-5s6.3 1.8 7 5H5Z"/></svg></div>
         <h3>Levantamento da situação</h3>
-        <p>Identificação de pendências em cartório, prefeitura ou órgão competente que podem travar a documentação do imóvel.</p>
+        <p>Pendências em cartório, prefeitura e órgãos que travam o processo.</p>
       </article>
       <article class="sm-service-card">
         <div class="sm-service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h10a2 2 0 0 1 2 2v3h-2V6H5v12h8v2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm12.6 8.1 3.3 3.3-6.8 6.8H11v-3.1l6.6-7Zm1.1-1.1.8-.8a1.2 1.2 0 0 1 1.7 0l.6.6a1.2 1.2 0 0 1 0 1.7l-.8.8-3.3-3.3Z"/></svg></div>
         <h3>Orientação jurídica</h3>
-        <p>Explicação clara de cada etapa da regularização, com indicação do que será necessário providenciar em cada caso.</p>
+        <p>Caminho claro do que fazer em cada etapa, sem juridiquês.</p>
       </article>
       <article class="sm-service-card">
         <div class="sm-service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 20 5v6c0 5-3.2 9.4-8 11-4.8-1.6-8-6-8-11V5l8-3Zm3.7 7.3-1.4-1.4-3.2 3.2-1.4-1.4-1.4 1.4 2.8 2.8 4.6-4.6Z"/></svg></div>
         <h3>Condução do processo</h3>
-        <p>Acompanhamento das etapas necessárias até o imóvel estar devidamente regularizado em nome do proprietário.</p>
+        <p>Conduzimos tudo até o imóvel estar no seu nome.</p>
       </article>
     </div>
   </div>
@@ -6284,7 +6320,7 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
   min-width:0!important;
   width:auto!important;
   font-weight:900!important;
-  box-shadow:0 16px 34px rgba(37,211,102,.24)!important;
+  box-shadow:none!important;
 }
 .elementor-10 .elementor-element.elementor-element-12ecc9da .elementor-button-text:after{
   content:"  →";
