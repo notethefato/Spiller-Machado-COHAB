@@ -5437,22 +5437,29 @@ html,body,.elementor-10{max-width:100%!important;overflow-x:hidden!important;}
   text-shadow: none !important;
 }
 
-/* ─── ICON LIST CARDS no mobile: icone esquerda, texto centralizado horizontalmente ─── */
+/* ─── ICON LIST CARDS no mobile: icone absoluto na esquerda, texto 100% centralizado ─── */
 @media(max-width:1024px){
   .elementor-10 .elementor-element.elementor-element-1bca0c44 .elementor-icon-list-item{
+    position:relative!important;
     background:#fff!important;
     border:1px solid #e5e0d3!important;
     border-radius:12px!important;
     box-shadow:none!important;
     backdrop-filter:none!important;
     filter:none!important;
-    padding:24px 22px!important;
-    display:grid!important;
-    grid-template-columns:auto 1fr!important;
-    column-gap:14px!important;
-    align-items:center!important;
+    padding:26px 22px!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    justify-content:center!important;
+    text-align:center!important;
+    min-height:120px!important;
   }
   .elementor-10 .elementor-element.elementor-element-1bca0c44 .elementor-icon-list-icon{
+    position:absolute!important;
+    left:18px!important;
+    top:50%!important;
+    transform:translateY(-50%)!important;
     width:40px!important;
     height:40px!important;
     min-width:40px!important;
@@ -5474,14 +5481,16 @@ html,body,.elementor-10{max-width:100%!important;overflow-x:hidden!important;}
     line-height:1.5!important;
     color:#555!important;
     text-align:center!important;
-    padding-left:0!important;
+    padding:0 70px!important;
+    width:100%!important;
+    display:block!important;
   }
   .elementor-10 .elementor-element.elementor-element-1bca0c44 .elementor-icon-list-text strong{
     display:block!important;
     color:#171717!important;
     font-size:15.5px!important;
     font-weight:800!important;
-    margin-bottom:4px!important;
+    margin-bottom:6px!important;
     line-height:1.25!important;
     text-align:center!important;
   }
