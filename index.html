@@ -5297,26 +5297,27 @@ html,body,.elementor-10{max-width:100%!important;overflow-x:hidden!important;}
 .sm-hero-tag {
   display: inline-flex !important;
   align-items: center !important;
-  gap: 8px !important;
-  background: rgba(244,183,108,.13) !important;
-  border: 1px solid rgba(244,183,108,.38) !important;
+  gap: 12px !important;
+  background: transparent !important;
+  border: none !important;
   color: #f4b76c !important;
   font-family: 'Roboto','Inter',Arial,sans-serif !important;
   font-size: 11px !important;
   font-weight: 700 !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .22em !important;
   text-transform: uppercase !important;
-  padding: 6px 14px !important;
-  border-radius: 50px !important;
-  margin-bottom: 22px !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  margin-bottom: 20px !important;
   animation: smFadeUp .6s .1s ease both;
 }
 .sm-hero-tag-dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: #f4b76c;
+  width: 32px !important;
+  height: 2px !important;
+  border-radius: 0 !important;
+  background: #f4b76c !important;
   flex-shrink: 0;
-  animation: smPulse 2s infinite;
+  animation: none !important;
 }
 
 /* Heading – Roboto Slab bold */
@@ -5423,6 +5424,17 @@ html,body,.elementor-10{max-width:100%!important;overflow-x:hidden!important;}
 .elementor-10 .elementor-element.elementor-element-23ea1558 .elementor-button:hover{
   background:#1db954!important;
   box-shadow:none!important;
+}
+
+/* ─── FORÇA bruta: matar TODOS os shadows do CTA do hero ─── */
+.elementor-10 .elementor-element-23ea1558 .elementor-button,
+.elementor-10 .elementor-element-23ea1558 .elementor-button:hover,
+.elementor-10 .elementor-element-23ea1558 .elementor-button:focus,
+.elementor-10 .elementor-element-23ea1558 a.elementor-button-link {
+  box-shadow: 0 0 0 transparent !important;
+  -webkit-box-shadow: none !important;
+  filter: none !important;
+  text-shadow: none !important;
 }
 </style></head><body data-rsssl="1" class="home wp-singular page-template page-template-elementor_canvas page page-id-10 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-canvas elementor-kit-7 elementor-page elementor-page-10 e--ua-blink e--ua-chrome e--ua-webkit litespeed_lazyloaded" data-elementor-device-mode="desktop"><div data-elementor-type="wp-page" data-elementor-id="10" class="elementor elementor-10" data-elementor-post-type="page"><div class="elementor-element elementor-element-6c4f9997 e-flex e-con-boxed e-con e-parent e-lazyloaded" id="topo" data-id="6c4f9997" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;waves&quot;,&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;}"><nav class="sm-top-nav" aria-label="Navegacao principal">
   <a class="sm-top-logo" href="#topo" aria-label="SM Advogados">
