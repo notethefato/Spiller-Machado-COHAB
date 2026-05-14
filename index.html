@@ -5440,29 +5440,23 @@ html,body,.elementor-10{max-width:100%!important;overflow-x:hidden!important;}
 /* ─── ICON LIST CARDS no mobile: icone absoluto na esquerda, texto 100% centralizado ─── */
 @media(max-width:1024px){
   .elementor-10 .elementor-element.elementor-element-1bca0c44 .elementor-icon-list-item{
-    position:relative!important;
     background:#fff!important;
     border:1px solid #e5e0d3!important;
     border-radius:12px!important;
     box-shadow:none!important;
     backdrop-filter:none!important;
     filter:none!important;
-    padding:26px 22px!important;
-    display:flex!important;
-    flex-direction:column!important;
-    align-items:stretch!important;
-    justify-content:center!important;
-    text-align:center!important;
-    min-height:120px!important;
+    padding:24px 18px!important;
+    display:grid!important;
+    grid-template-columns:40px 1fr 40px!important;
+    column-gap:12px!important;
+    align-items:center!important;
+    min-height:110px!important;
   }
   .elementor-10 .elementor-element.elementor-element-1bca0c44 .elementor-icon-list-icon{
-    position:absolute!important;
-    left:18px!important;
-    top:50%!important;
-    transform:translateY(-50%)!important;
+    grid-column:1!important;
     width:40px!important;
     height:40px!important;
-    min-width:40px!important;
     background:#f5efe2!important;
     border-radius:10px!important;
     display:flex!important;
@@ -5470,19 +5464,24 @@ html,body,.elementor-10{max-width:100%!important;overflow-x:hidden!important;}
     justify-content:center!important;
     margin:0!important;
   }
+  .elementor-10 .elementor-element.elementor-element-1bca0c44 .elementor-icon-list-item::after{
+    content:''!important;
+    grid-column:3!important;
+    display:block!important;
+  }
   .elementor-10 .elementor-element.elementor-element-1bca0c44 .elementor-icon-list-icon svg{
     width:16px!important;
     height:16px!important;
     fill:#c8a06a!important;
   }
   .elementor-10 .elementor-element.elementor-element-1bca0c44 .elementor-icon-list-text{
+    grid-column:2!important;
     font-family:'Inter','Roboto',Arial,sans-serif!important;
     font-size:14px!important;
     line-height:1.5!important;
     color:#555!important;
     text-align:center!important;
-    padding:0 70px!important;
-    width:100%!important;
+    padding:0!important;
     display:block!important;
   }
   .elementor-10 .elementor-element.elementor-element-1bca0c44 .elementor-icon-list-text strong{
