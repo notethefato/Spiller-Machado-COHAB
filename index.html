@@ -7126,14 +7126,16 @@ document.addEventListener('click', function(event) {
 })();
 </script>
 <script>
-/* GTM: rastreamento de cliques no WhatsApp */
+/* GTM: rastreamento de cliques no WhatsApp (esquerdo, meio, direito) */
 (function(){
-  document.addEventListener('click', function(e){
+  function handler(e){
     var link = e.target.closest('a[href*="api.whatsapp.com"], a[href*="wa.me"]');
     if (!link) return;
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({event: 'whatsapp_click'});
-  }, true);
+  }
+  document.addEventListener('click', handler, true);
+  document.addEventListener('auxclick', handler, true);
 })();
 </script>
 </body></html>
