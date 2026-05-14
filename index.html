@@ -3908,7 +3908,7 @@ html,body,.elementor-10{max-width:100%!important;overflow-x:hidden!important;}
 .sm-top-cta{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 22px;border-radius:10px;background:#25d366;color:#fff!important;text-decoration:none;font-size:14px;font-weight:900;box-shadow:0 16px 34px rgba(37,211,102,.25);white-space:nowrap;}
 .elementor-10 .elementor-element.elementor-element-6c650110 .elementor-heading-title{font-family:"Inter","Sora",Arial,sans-serif!important;font-weight:900!important;letter-spacing:-.02em!important;line-height:1.03!important;}
 .elementor-10 .elementor-element.elementor-element-6c661252{font-family:"Inter","Sora",Arial,sans-serif!important;font-weight:600!important;}
-@media(max-width:900px){.sm-top-nav{width:calc(100% - 36px);height:68px;gap:14px}.sm-top-logo{min-width:124px}.sm-top-logo img{width:124px}.sm-top-links{display:none}.sm-top-cta{min-height:40px;padding:0 14px;font-size:12px;border-radius:9px}.elementor-10 .elementor-element.elementor-element-6c4f9997{--padding-top:86px!important;}}
+@media(max-width:900px){.sm-top-nav{width:calc(100% - 36px);height:68px;gap:14px}.sm-top-logo{min-width:124px}.sm-top-logo img{width:124px}.sm-top-links{display:none}.sm-top-cta{display:none!important}.elementor-10 .elementor-element.elementor-element-6c4f9997{--padding-top:86px!important;}}.sm-hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;background:transparent;border:none;cursor:pointer;padding:6px;margin-left:auto;z-index:1001;}.sm-hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:transform .3s ease,opacity .3s ease;}.sm-hamburger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg);}.sm-hamburger.is-open span:nth-child(2){opacity:0;}.sm-hamburger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}@media(max-width:900px){.sm-hamburger{display:flex;}}.sm-mobile-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:1100;opacity:0;transition:opacity .3s ease;}.sm-mobile-overlay.is-open{display:block;opacity:1;}.sm-mobile-drawer{position:fixed;top:0;right:0;bottom:0;width:min(320px,85vw);background:#12304a;z-index:1200;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:-8px 0 32px rgba(0,0,0,.3);}.sm-mobile-drawer.is-open{transform:translateX(0);}.sm-mobile-drawer-header{display:flex;align-items:center;justify-content:space-between;padding:20px 20px 16px;border-bottom:1px solid rgba(255,255,255,.1);}.sm-mobile-drawer-logo{width:120px;}.sm-mobile-drawer-close{background:transparent;border:none;color:#fff;font-size:20px;cursor:pointer;padding:4px;line-height:1;opacity:.8;}.sm-mobile-drawer-close:hover{opacity:1;}.sm-mobile-drawer-links{display:flex;flex-direction:column;padding:12px 0;flex:1;}.sm-mobile-drawer-links a{color:#fff;text-decoration:none;font-family:"Inter","Sora",Arial,sans-serif;font-size:16px;font-weight:500;padding:14px 24px;border-bottom:1px solid rgba(255,255,255,.07);transition:background .2s,padding-left .2s;}.sm-mobile-drawer-links a:hover{background:rgba(255,255,255,.06);padding-left:30px;}.sm-mobile-drawer-footer{padding:20px 24px 32px;border-top:1px solid rgba(255,255,255,.1);}.sm-mobile-drawer-cta{display:block;text-align:center;background:#25d366;color:#fff;font-family:"Inter","Sora",Arial,sans-serif;font-size:15px;font-weight:700;padding:14px 20px;border-radius:10px;text-decoration:none;transition:background .2s,transform .15s;}.sm-mobile-drawer-cta:hover{background:#1db954;transform:scale(1.02);}
 @media(max-width:420px){.sm-top-nav{width:calc(100% - 28px)}.sm-top-logo{min-width:112px}.sm-top-logo img{width:112px}.sm-top-cta{font-size:11px;padding:0 12px}.elementor-10 .elementor-element.elementor-element-6c650110 .elementor-heading-title{font-size:29px!important;}}
 /* Ajustes mobile da hero e navbar retratil */
 .sm-top-nav{transition:transform .28s ease, opacity .28s ease, background-color .28s ease, box-shadow .28s ease;}
@@ -5274,12 +5274,31 @@ html,body,.elementor-10{max-width:100%!important;overflow-x:hidden!important;}
   </a>
   <div class="sm-top-links">
     <a href="#analise">Sobre</a>
-    <a href="#atuacao">Atuacao</a>
-    <a href="#contato">Contato</a>
-    <a href="#localizacao">Localizacao</a>
+    <a href="#atuacao">Atuação</a>
+    <a href="#contato">Serviços</a>
+    <a href="#localizacao">Localização</a>
   </div>
   <a class="sm-top-cta" href="https://api.whatsapp.com/send/?phone=5549989134612&amp;text=Ol%C3%A1%2C+vim+pelo+site%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21&amp;type=phone_number&amp;app_absent=0">Falar com especialista</a>
-</nav><div class="e-con-inner"><div class="elementor-shape elementor-shape-bottom" aria-hidden="true" data-negative="true">
+  <button class="sm-hamburger" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="sm-mobile-overlay" aria-hidden="true"></div>
+<div class="sm-mobile-drawer" aria-hidden="true">
+  <div class="sm-mobile-drawer-header">
+    <img src="./Spiller &amp; Machado – Advogados_files/sm-logo-white.webp" alt="SM Advogados" class="sm-mobile-drawer-logo">
+    <button class="sm-mobile-drawer-close" aria-label="Fechar menu">✕</button>
+  </div>
+  <nav class="sm-mobile-drawer-links">
+    <a href="#analise">Sobre</a>
+    <a href="#atuacao">Atuação</a>
+    <a href="#contato">Serviços</a>
+    <a href="#localizacao">Localização</a>
+  </nav>
+  <div class="sm-mobile-drawer-footer">
+    <a class="sm-mobile-drawer-cta" href="https://api.whatsapp.com/send/?phone=5549989134612&amp;text=Ol%C3%A1%2C+vim+pelo+site%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21&amp;type=phone_number&amp;app_absent=0">Falar com especialista</a>
+  </div>
+</div><div class="e-con-inner"><div class="elementor-shape elementor-shape-bottom" aria-hidden="true" data-negative="true">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
 <path class="elementor-shape-fill" d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3
 c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3
@@ -6748,6 +6767,43 @@ document.addEventListener('click', function(event) {
   }
   window.addEventListener('scroll', updateNav, {passive:true});
   updateNav();
+})();
+</script>
+<script>
+(function(){
+  var hamburger = document.querySelector('.sm-hamburger');
+  var drawer = document.querySelector('.sm-mobile-drawer');
+  var overlay = document.querySelector('.sm-mobile-overlay');
+  if (!hamburger || !drawer || !overlay) return;
+
+  function openMenu(){
+    hamburger.classList.add('is-open');
+    hamburger.setAttribute('aria-expanded','true');
+    drawer.classList.add('is-open');
+    overlay.classList.add('is-open');
+    drawer.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu(){
+    hamburger.classList.remove('is-open');
+    hamburger.setAttribute('aria-expanded','false');
+    drawer.classList.remove('is-open');
+    overlay.classList.remove('is-open');
+    drawer.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+
+  hamburger.addEventListener('click', function(){
+    hamburger.classList.contains('is-open') ? closeMenu() : openMenu();
+  });
+
+  overlay.addEventListener('click', closeMenu);
+  document.querySelector('.sm-mobile-drawer-close').addEventListener('click', closeMenu);
+
+  document.querySelectorAll('.sm-mobile-drawer-links a, .sm-mobile-drawer-cta').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
 })();
 </script><script>
 (function(){
